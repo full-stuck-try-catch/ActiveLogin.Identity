@@ -1,0 +1,12 @@
+@page
+@model LogoutModel
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h2 class="h5">Sign out</h2>
+        <p>You are currently signed in as @User.Identity?.Name.</p>
+        <form method="post">
+            <button class="btn btn-danger" type="submit">Logout</button>
+        </form>
+    </div>
+</div>
